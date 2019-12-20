@@ -1,0 +1,32 @@
+#datasource
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://39.105.1.6/inforelease?useUnicode=true&allowMultiQueries=true&characterEncoding=UTF-8
+    username: guozc
+    password: Guozc@2019
+
+## redis
+  redis:
+    database: 1
+    host: 47.93.192.144
+    port: 6379
+    password: guozichang
+    pool:
+      max-idle: 8
+      max-active: 8
+      max-wait: -1
+    timeout: 5000
+
+##shiro redis
+  shiro:
+    redis:
+      database: 4
+      host: 47.93.192.144
+      port: 6379
+      password: guozichang
+      timeout: 5000
+      session-expire: 7200
+
+default-configs:
+  application-url: http://192.168.100.23:38081/inforelease
